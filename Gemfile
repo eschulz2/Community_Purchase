@@ -16,6 +16,7 @@ gem 'bootstrap-sass'
 gem 'devise'
 gem 'high_voltage'
 gem 'simple_form'
+gem 'stripe'
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
