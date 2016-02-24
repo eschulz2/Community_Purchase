@@ -40,7 +40,7 @@ class TablesController < ApplicationController
 	private
 
 	def table_params
-	  params.require(:table).permit(:location, :address, :description, :price)
+	  params.require(:table).permit(:datetime, :location, :address, :description, :price)
 	end
 
 end
