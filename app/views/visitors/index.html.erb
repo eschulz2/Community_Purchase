@@ -76,7 +76,7 @@
 
                       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                               data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                              data-description=<%= table.description %>
+                              data-description="A spot on the List"
                               data-amount=<%= table.price * 100 %>
                               data-locale="auto"
                               data-billing-address=true>
