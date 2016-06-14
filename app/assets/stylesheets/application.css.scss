@@ -41,6 +41,7 @@ main {
  h1, .h1, h2, .h2, h3, .h3 {
      margin-top: 10px;
      margin-bottom: 10px;
+     color: #595E64;
  }
 
  .page-header {
@@ -50,10 +51,23 @@ main {
  }
 
  .navbar {
-   background-color: #eee;
+   background-color: #D13A39;
+   border-color: #595E64;
+   border-width: 0 0 5px;
+
  }
 
- .navbar-inverse .navbar-nav > li > a:hover {
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a{
+    color: white;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
      color: black;
  }
+
+ .navbar-inverse .navbar-brand:hover {
+     color: black;
+ }
+
+
 

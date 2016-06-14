@@ -1,42 +1,7 @@
 <!-- Page Content -->
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-  <!-- Services Section -->
-  <section id="services" class="services-section">
-      <div class="container">
-          <div class="row">
-
-                      <div class="col-lg-12">
-                          <h1 class="page-header">Venues</h1>
-                      </div>
-
-                      <div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-xs-6 thumb">
-                          <a class="thumbnail" href="/cuvee">
-                              <h2 class="img-responsive"  alt="">Cuvee</h2>
-                          </a>
-                      </div>
-                      <div class="col-lg-3 col-md-3 col-xs-6 thumb">
-                          <a class="thumbnail" href="/shay">
-                              <h2 class="img-responsive"  alt="">Shay</h2>
-                          </a>
-                      </div>
-                      <!-- <div class="col-lg-3 col-md-3 col-xs-6 thumb">
-                          <a class="thumbnail" href="#">
-                              <h2 class="img-responsive"  alt="">Bar Name</h2>
-                          </a>
-                      </div>
-                      <div class="col-lg-3 col-md-3 col-xs-6 thumb">
-                          <a class="thumbnail" href="#">
-                              <h2 class="img-responsive"  alt="">Bar Name</h2>
-                          </a>
-                      </div> -->
-                      
-                  </div>
-      </div>
-  </section>
-
 <div class="container">
-  <hr>
   <br>
 
     <div class="row">
@@ -76,7 +41,7 @@
 
                       <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                               data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-                              data-description="A spot on the List"
+                              data-description=<%= table.location %>
                               data-amount=<%= table.price * 100 %>
                               data-locale="auto"
                               data-billing-address=true>

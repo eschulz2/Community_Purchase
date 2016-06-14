@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :tables
   resources :charges
+
+  get "/cuvee" => 'visitors#cuvee'
+  get "/shay" => 'visitors#shay'
 end
