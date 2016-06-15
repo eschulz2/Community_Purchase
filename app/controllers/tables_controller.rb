@@ -4,7 +4,11 @@ class TablesController < ApplicationController
 	end
 
 	def new
-		@table = Table.new
+		if user_signed_in? && current_user.email == "eschulz2@gmail.com"
+		  @table = Table.new
+		else
+			redirect_to :root
+		end
 	end
 
 	def create 
@@ -19,7 +23,11 @@ class TablesController < ApplicationController
 	end
 
 	def show
-		@table = Table.find(params[:id])
+		if user_signed_in? && current_user.email == "eschulz2@gmail.com"
+		  @table = Table.new
+		else
+			redirect_to :root
+		end
 	end
 
 	def edit
